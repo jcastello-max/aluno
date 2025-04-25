@@ -1,4 +1,8 @@
 package com.senai.aluno.inteface;
 
-public interface AlunoRepositor {
+import com.senai.aluno.model.Aluno;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AlunoRepositor extends JpaRepository<Aluno , Long> {
+
 }
